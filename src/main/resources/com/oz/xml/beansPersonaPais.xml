@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean name="personaPais" class="com.oz.beans.Persona">
+<property name="id" value="1"></property>
+<property name="name" value="Osvaldo"></property>
+<property name="surname" value="OZ"></property>
+<property name="pais" ref="pais"></property>
+</bean>
+
+<bean name="pais" class="com.oz.beans.Pais">
+<property name="nombre" value="USA"></property>
+<property name="ciudad" ref="ciudad"></property>
+</bean>
+
+<bean name="ciudad" class="com.oz.beans.Ciudad">
+<property name="nombre" value="Columbus"></property>
+</bean>
+</beans>

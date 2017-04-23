@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean name="personaAllvalues" class="com.oz.beans.Persona">
+   <constructor-arg value="1"></constructor-arg>
+   <constructor-arg value="osvaldo"></constructor-arg>
+   <constructor-arg value="Oz"></constructor-arg>
+</bean>
+
+<bean name="personaContructorInt" class="com.oz.beans.Persona">
+   <constructor-arg type="int" value="1"></constructor-arg>
+</bean>
+
+
+<bean name="personaConstructorName" class="com.oz.beans.Persona">
+   <constructor-arg type="String" value="Osvaldo"></constructor-arg>
+</bean>
+
+<bean name="personaContructorIndex" class="com.oz.beans.Persona">
+   <constructor-arg index="0" value="1"></constructor-arg>
+   <constructor-arg index="1" value="osvaldo"></constructor-arg>
+   <constructor-arg index="2" value="Oz"></constructor-arg>
+</bean> 
+
+</beans>
